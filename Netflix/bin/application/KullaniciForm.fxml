@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="KayitSayfa" prefHeight="648.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KullaniciFormController">
+   <children>
+      <ImageView fitHeight="735.0" fitWidth="1297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@netflix.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="KullaniciText" layoutX="469.0" layoutY="162.0" prefHeight="33.0" prefWidth="271.0" promptText="Kullanıcı Adı" />
+      <TextField fx:id="SifreText" layoutX="469.0" layoutY="294.0" prefHeight="33.0" prefWidth="271.0" promptText="Şifre" />
+      <TextField fx:id="emailText" layoutX="469.0" layoutY="234.0" prefHeight="33.0" prefWidth="271.0" promptText="E-mail Adresi" />
+      <TextField fx:id="dogumTarihiText" layoutX="469.0" layoutY="365.0" prefHeight="33.0" prefWidth="271.0" promptText="Doğum Tarihi (YYYY-AA-GG)" />
+      <Button fx:id="KayitOlBtn" layoutX="513.0" layoutY="502.0" mnemonicParsing="false" onAction="#KayitOlBtnClick" prefHeight="39.0" prefWidth="183.0" text="KAYIT OL" />
+      <ComboBox fx:id="turSec" layoutX="469.0" layoutY="432.0" onAction="#turSecClick" prefHeight="33.0" prefWidth="271.0" promptText="Tür Seçiniz(3 tane)" />
+   </children>
+</AnchorPane>
